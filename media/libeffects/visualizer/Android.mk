@@ -15,6 +15,8 @@ LOCAL_SHARED_LIBRARIES := \
 LOCAL_MODULE_PATH := $(TARGET_OUT_SHARED_LIBRARIES)/soundfx
 LOCAL_MODULE:= libvisualizer
 
+LOCAL_CFLAGS = -fno-strict-aliasing
+
 LOCAL_C_INCLUDES := \
 	$(call include-path-for, graphics corecg) \
 	$(call include-path-for, audio-effects)

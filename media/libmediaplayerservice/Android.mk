@@ -57,6 +57,8 @@ endif
 
 LOCAL_MODULE:= libmediaplayerservice
 
+LOCAL_CFLAGS = -fno-strict-aliasing
+
 include $(BUILD_SHARED_LIBRARY)
 
 include $(call all-makefiles-under,$(LOCAL_PATH))

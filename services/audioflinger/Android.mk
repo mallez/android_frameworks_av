@@ -17,6 +17,9 @@ ifeq ($(TARGET_QCOM_AUDIO_VARIANT),caf)
 LOCAL_CFLAGS += -DQCOM_ENHANCED_AUDIO
 endif
 
+
+LOCAL_CFLAGS += -fno-strict-aliasing
+
 LOCAL_SRC_FILES:=               \
     AudioFlinger.cpp            \
     AudioMixer.cpp.arm          \

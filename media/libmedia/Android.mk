@@ -81,6 +81,9 @@ LOCAL_CFLAGS += -DQCOM_ENHANCED_AUDIO
 endif
 endif
 
+
+LOCAL_CFLAGS += -fno-strict-aliasing
+
 LOCAL_SHARED_LIBRARIES := \
 	libui libcutils libutils libbinder libsonivox libicuuc libexpat \
         libcamera_client libstagefright_foundation \
